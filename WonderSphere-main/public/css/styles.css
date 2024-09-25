@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  margin-top: 10px;
+}
+
+/* Navbar */
+.navbar {
+  /* height: 5rem; */
+  background-color: white;
+}
+.navbar-brand {
+  font-size: 3rem;
+}
+.fa-earth-americas {
+  color: #6a0dad;
+  font-size: 2rem;
+}
+.navbar-brand-title {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  font-family: "Bodoni Moda", serif;
+}
+.nav-link {
+  color: black !important;
+}
+.navbar-collapse {
+  justify-content: right;
+  margin-right: 5%;
+}
+
+/* Footer */
+.f-info {
+  margin-top: 10px;
+  border-top: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.f-info-socials {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.fa-brands {
+  margin-right: 5px;
+  padding: 3px;
+}
+.social:hover {
+  background-color: #6a0dad;
+  border-radius: 5px;
+  color: white;
+  transition-duration: 0.3s;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: black;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+  transition-duration: text-decoration 0.3s;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.listingHolder {
+  border: none !important;
+}
+.card-img-top {
+  height: 20rem;
+  border-radius: 15px !important;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.listing-link {
+  text-decoration: none;
+}
+/* Show.ejs styling */
+.main-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conatiner {
+  width: 100%;
+}
+.listingTitle {
+  margin-left: 5%;
+}
+.listingImage {
+  display: flex;
+  justify-content: center;
+}
+.listingImage img {
+  border-radius: 15px;
+  height: 600px;
+  width: 800px;
+  box-shadow: 0px 5px 15px #6a0dad;
+}
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.des {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.price {
+  height: 130px;
+  width: 30%;
+  background-color: white;
+  box-shadow: 0px 5px 15px #000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6a0dad;
+}
+.price h4 {
+  font-size: 2.5rem;
+}
+.locCou {
+  color: #6a0dad;
+  margin-left: 5%;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.edit,
+.delete {
+  height: 60px;
+  background-color: transparent;
+  border-radius: 15px;
+  width: 150px;
+}
+.edit {
+  background-color: #6a0dad;
+  color: white;
+}
+.edit:hover,
+.delete:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* Review Container styling */
+.reviewContainer {
+  width: 95%;
+  border-top: 2px solid black; 
+  border-bottom: 2px solid black;
+  margin-top: 30px;
+}
+.reviewContainer h4 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.reviewForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.reviewForm label {
+  font-size: 1rem;
+  color: #000;
+}
+.reviewForm .btns button {
+  margin-top: 20px;
+  height: 50px;
+  background-color: #6a0dad;
+  width: 100px;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+.reviewDisplayer {
+  margin-top: 10px;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+.reviewDisplayer .card {
+  width: 45%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.reviewDisplayer .card-title {
+  font-size: 1.5rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.reviewDisplayer .card-title .fa-star {
+  color: #6a0dad;
+}
+.reviewDisplayer .card-title button {
+  background-color: transparent;
+  border: none;
+}
+.reviewDisplayer .card-body {
+  font-size: 1.4rem;
+}
+/* Add New listing styles */
+.newform,
+.editform {
+  display: flex;
+  justify-content: center;
+}
+.newContainer,
+.editContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.priLoc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.pri,
+.loc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newInp,
+.editInp {
+  height: 35px;
+}
+.addCon,
+.editCon {
+  display: flex;
+  justify-content: center;
+}
+.addbtn,
+.editbtn {
+  width: 120px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 15px;
+}
+
+/* map styling */
+.mapMainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mapContainer{
+    height: 500px;
+    width: 60%;
+}
+#map {
+  height: 95%;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

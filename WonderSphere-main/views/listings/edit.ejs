@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <form method="post" action="/listings/<%= list._id %>?_method=PUT" class="editform needs-validation" novalidate enctype="multipart/form-data">
+        <div class="editContainer">
+            <h2>Edit Listing details</h2>
+            <label for="title">Title: </label>
+            <input type="text" id="title" value="<%= list.title %>" name="listings[title]" class="editInp form-control" required>
+            <br>
+            <label for="description">Description: </label>
+            <textarea type="text" id="description" name="listings[description]" class="form-control" required><%= list.description %></textarea>
+            <br>
+            <label for="Image">New Image: </label>
+            <input type="file" id="Image" name="listings[image]" class="editInp form-control">
+            <br>
+            <div class="priLoc">
+                <div class="pri">
+                    <label for="price">Price: </label>
+                    <input type="number" id="price" value="<%= list.price %>" name="listings[price]" class="editInp form-control" required>
+                </div>
+                <br>
+                <div class="loc">
+                    <label for="location">Location: </label>
+                    <input type="text" id="location" value="<%= list.location %>" name="listings[location]" class="editInp form-control" required>
+                </div>
+            </div>
+            <br>
+            <label for="country">Country: </label>
+            <input type="text" id="country" value="<%= list.country %>" name="listings[country]" class="editInp form-control" required>
+            <br>
+            <div class="editCon">
+                <button type="submit" class="editbtn">Edit</button>
+            </div>
+        </div>
+    </form>
+</body>

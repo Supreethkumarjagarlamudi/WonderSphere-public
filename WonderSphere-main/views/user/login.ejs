@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <form action="/login" method="post" class="newform needs-validation" novalidate>
+        <div class="newContainer">
+            <h3>Login</h3>
+            <label for="userName">Username: </label>
+            <input type="text" id="userName" placeholder="please Enter Username" name="username" class="newInp form-control" required>
+            <div class="valid-feedback">
+                looks good
+            </div>
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" placeholder="please Enter Password" name="password" class="newInp form-control" required>
+            <br>
+            <div class="addCon">
+                <button type="submit" class="addbtn">Login</button>
+            </div>
+        </div>
+    </form>
+</body>
